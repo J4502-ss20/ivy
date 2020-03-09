@@ -1,24 +1,23 @@
 body {
   text-align: center;
-  background-color: #88D88D;
+  background-color: #D3D3D3;
 
 }
 
 p {
   font-size: 1.0rem;
-  font-family: 'Montserrat', arial, sans-serif;
+  font-family: 'Caladea', Times, serif;
 }
 
 h1{
-color: #FAEBD7;
-background-color: lightgrey;
-font-family: 'Caladea', Times, serif;
+color: #333;
+font-family: 'Times', serif;
 }
 
 li {
   list-style: none;
   font-weight: bolder;
-  font-family: 'Lato', arial, sans-serif;
+  font-family: 'Sen', arial, sans-serif;
 }
 
  img {
@@ -26,5 +25,65 @@ li {
 }
 
 nav {
-  background-color: lightgrey;
+    background-color: #B0C4DE;
+    overflow: hidden;
+    width: 100%
+}
+nav a {
+  float: left;
+  width: 200px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Sen', arial, sans-serif;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+nav a {
+  /* width: 15% */
+}
+
+footer {
+    background-color: #B0C4DE;
+    overflow: hidden;
+  }
+  footer a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Sen', arial, sans-serif;
+  }
+
+  footer a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  footer a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  footer a {
+    width: 15%
+  }
+
+#navigation-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }

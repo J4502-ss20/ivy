@@ -1,23 +1,27 @@
+html {
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
 body {
   text-align: center;
-  background-color: #D3D3D3;
+  background-color: #FFFFFF;
 
 }
 
 p {
   font-size: 1.0rem;
-  font-family: 'Caladea', Times, serif;
+  font-family: 'Times', serif;
 }
 
 h1{
-color: #333;
+color: #000000;
 font-family: 'Times', serif;
 }
 
 li {
   list-style: none;
   font-weight: bolder;
-  font-family: 'Sen', arial, sans-serif;
 }
 
  img {
@@ -25,19 +29,19 @@ li {
 }
 
 nav {
-    background-color: #B0C4DE;
+    background-color: #556B2F;
     overflow: hidden;
     width: 100%
 }
 nav a {
   float: left;
   width: 200px;
-  color: #f2f2f2;
+  color: #F0F8FF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: 'Sen', arial, sans-serif;
+  border: 100%;
 }
 
 nav a:hover {
@@ -51,39 +55,186 @@ nav a.active {
 }
 
 nav a {
-  /* width: 15% */
+  width: 22%
 }
-
-footer {
-    background-color: #B0C4DE;
-    overflow: hidden;
-  }
-  footer a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Sen', arial, sans-serif;
-  }
-
-  footer a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  footer a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-  footer a {
-    width: 15%
-  }
 
 #navigation-flexbox {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: baseline;
+}
+
+#Ivy-Hettinger {
+
+  font-size: 30px;
+  font-family: 'Poiret One', Times, serif;
+  font-weight: bolder
+
+}
+
+#About-Me {
+  font-size: 15px;
+  font-family: 'Roboto:700', arial, sans-serif;
+  font-weight: bolder
+}
+
+#Design {
+  font-size: 15px;
+  font-family: 'Roboto:700', arial, sans-serif;
+  font-weight: bolder
+}
+
+#Writing {
+  font-size: 15px;
+  font-family: 'Roboto:700', arial, sans-serif;
+  font-weight: bolder
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin: 0 auto -50px;
+}
+/* stuff from video*/
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.authorbox img {
+  display: none;
+}
+
+.pullquote {
+  display: none;
+}
+
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 450px) {
+  .grid-container {
+      display: grid;
+      grid-template-columns: 20px 50px auto 10px;
+      grid-gap: 20px;
+      grid-template-areas:
+        "a b b"
+        "c c c"
+        "e d d";
+
+    }
+    img.ivy {
+      height: 75%;
+      width: 75%;
+    }
+}
+@media screen and (min-width: 600px){
+
+    #container {
+      width: 80%
+    }
+
+    .authorbox img {
+      display: block;
+      width: 100%;
+      margin-top: 0.5em;
+
+    }
+
+    .authorbox {
+      width: 25%
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+
+    }
+}
+
+.grid-container {
+  align:center;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "a b b"
+    "c c c"
+    "e d d";
+}
+
+@media screen and (min-width: 800px) {
+  .grid-container {
+      display: grid;
+      grid-template-columns: 40px 100px auto 20px;
+      grid-gap: 15px;
+      grid-template-areas:
+        "a b b"
+        "c c c"
+        "e d d";
+
+    }
+    img.ivy {
+      height: 75%;
+      width: 75%;
+    }
+}
+.grid-item{
+  object-fit: 10%;
+}
+img.ivy {
+  height: 75%;
+  width: 75%;
+}
+@media screen and (min-width: 1000px) {
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;
+    grid-gap: 20px;
+    grid-template-areas:
+      "a b b"
+      "c c c"
+      "e d d";
+
+  }
+  img.ivy {
+    height: 75%;
+    width: 75%;
+  }
+}
+
+  .authorbox {
+    width: 100%;
+    grid-area: a
+
+  }
+  .section1 {
+    grid-area: b;
+  }
+  .image {
+    grid-area: c;
+  }
+  .section2 {
+    grid-area: d;
+  }
+  .pullquote {
+    margin-top:0;
+    grid-area: e;
+  }
+
+  .section1 p:first-of-type, .section2 p:first-of-type {
+    margin-top: 0;
+  }
+
 }
